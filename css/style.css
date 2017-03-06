@@ -1,0 +1,213 @@
+body {
+	font-family: Lato;
+	background: #47494f; /* dark gray */
+}
+
+
+
+/***************************
+NAVIGATION
+****************************/
+.nav ul {
+    margin-top: 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.nav li {
+	display: inline-block;
+}
+
+.nav li a {
+	display: block;
+	padding: 25px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	letter-spacing: 0.25em;
+}
+
+.nav li:hover,
+.selected {
+    cursor: pointer;
+    font-weight: 900;
+ }
+
+.sticky {
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	opacity: 0.9;
+}
+
+
+
+/***************************
+HEADER
+****************************/
+.logo {
+	font-family: 'Fairwater Open Serif';
+	font-size: 90px;
+	margin-top: -10px;
+	margin-bottom: -80px;
+	text-align: center;
+	color: #e2e0e2; /* light gray */
+}
+
+.name {
+	font-family: 'Fairwater Script Light';
+	text-align: center;
+	color: #e2e0e2; /* light gray */
+	font-size: 40px;
+	margin-bottom: -10px;
+	font-weight: 100;
+}
+
+
+
+/****************************
+IMAGE SLIDES
+****************************/
+.slides img {
+ 	margin: 10px auto;
+ 	border: 20px solid #fff; /* white */
+ }
+
+.slick-dots li button:before {
+	font-size: 15px;
+	color: #fff; /* white */
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 150px;
+}
+.slick-dots li.slick-active button:before {
+	color: white;
+}
+
+
+/***************************
+CONTENT
+****************************/
+.content {
+	display: block;
+	max-width: 800px;
+	margin: 30px auto;
+	padding: 15px;
+	font-size: 13px;
+	line-height: 22px;
+	letter-spacing: 0.05em;
+	color: #fff;
+}
+
+.content h2 {
+	display: block;
+	text-align: center;
+	letter-spacing: 0.3em;
+}
+
+.nav-fix {
+	margin-top: -5px;
+}
+
+
+
+/***************************
+IMAGE GALLERY
+****************************/
+.flex {
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.img {
+	display: inline-block;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border: 10px solid white;
+    margin: 5px;
+}
+
+
+
+/***************************
+CONTACT PAGE
+****************************/
+.headshot {
+	border: 5px solid white;
+}
+
+.contact {
+	text-align: center;
+}
+
+.contact-icon {
+	display: inline-block;
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 110px;
+}
+
+.contact-icon a {
+	margin: 0 auto;
+}
+
+
+
+/***************************
+FOOTER
+****************************/
+.footer {
+	height: 150px;
+	background-color: #fff;
+	text-align: center;
+}
+
+.footer p {
+	padding-top: 50px;
+	line-height: 30px;
+}
+
+
+
+/****************************
+MEDIA QUERIES
+****************************/
+@media (max-width: 670px) {
+	.nav li {
+		font-size: 12px;
+	}
+
+	.logo {
+		font-size: 75px;
+		margin-top: -15px;
+		margin-bottom: -55px;
+	}
+
+	.name {
+		font-size: 35px;
+		margin-bottom: -20px;
+	}
+
+	.slides img {
+		height: 65%;
+		width: 65%;
+	}
+
+	p {
+		padding: 0 25px;
+	}
+
+	.contact {
+		margin-bottom: 80px;
+	}
+
+	.contact-icon {
+		margin: -20px;
+	}
+	.slick-dotted.slick-slider {
+    margin-bottom: 91px;
+	}
+
+}
